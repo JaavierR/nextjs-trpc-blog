@@ -21,7 +21,7 @@ function RegisterPage() {
     <>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col space-y-2 max-w-xl"
+        className="flex flex-col space-y-2 max-w-xl mx-auto"
       >
         {error && error.message}
         <h1 className="text-3xl font-semibold leading-tight my-4">Register</h1>
@@ -30,19 +30,20 @@ function RegisterPage() {
           type="email"
           placeholder="jane.doe@example.com"
           {...register('email')}
-          className="border"
+          className="border px-4 py-2 border-gray-200 rounded-md shadow-sm placeholder:text-gray-400"
         />
-
-        <br />
 
         <input
           type="text"
           placeholder="Tom"
           {...register('name')}
-          className="border"
+          className="border px-4 py-2 border-gray-200 rounded-md shadow-sm placeholder:text-gray-400"
         />
 
-        <button type="submit" className="bg-indigo-500 text-white">
+        <button
+          type="submit"
+          className="bg-blue-500 py-2 rounded-md border border-blue-300 font-medium text-white"
+        >
           Register
         </button>
       </form>

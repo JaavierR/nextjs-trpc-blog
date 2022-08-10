@@ -4,7 +4,7 @@ import Link from 'next/link'
 // import { useRouter } from 'next/router'
 import { useForm } from 'react-hook-form'
 
-function RegisterPage() {
+function LoginPage() {
   const { handleSubmit, register } = useForm<CreateUserInput>()
   // const router = useRouter()
 
@@ -30,10 +30,6 @@ function RegisterPage() {
         />
 
         <br />
-
-        <input type="text" placeholder="Tom" {...register('name')} />
-
-        <button type="submit">Register</button>
       </form>
       <Link href="/register">
         <a>Register</a>
@@ -42,4 +38,4 @@ function RegisterPage() {
   )
 }
 
-export default RegisterPage
+export default LoginPage
