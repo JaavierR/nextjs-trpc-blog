@@ -1,4 +1,4 @@
-import { createPostSchema, getSinglePostSchema } from '@/schema/post.schems'
+import { createPostSchema, getSinglePostSchema } from '@/schema/post.schema'
 import * as trpc from '@trpc/server'
 import { createRouter } from '../createRouter'
 
